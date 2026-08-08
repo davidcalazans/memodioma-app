@@ -1,0 +1,8 @@
+{
+  "appId": "com.user.memodioma",
+  "appName": "Memodioma",
+  "webDir": "www",
+  "android": {
+    "studioPath": "/home/david/Downloads/android-studio/bin/studio.sh"
+  }
+}

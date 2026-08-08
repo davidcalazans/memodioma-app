@@ -1,0 +1,21 @@
+{
+  "name": "memodioma-app",
+  "version": "1.0.0",
+  "description": "O Memodioma App é um aplicativo desenvolvido exclusivamente para transformar a maneira como você treina e domina novos idiomas. Combinando ciência cognitiva e praticidade, nossa metodologia acelera o seu aprendizado prático por meio de três pilares fundamentais: Método SRS (Spaced Repetition System / Repetição Espaçada), Flashcards (Cartões de Memória) e Chunks (Blocos de Linguagem)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "David Calazans",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/local-notifications": "^8.2.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.0",
+    "@capacitor/core": "^8.5.0"
+  }
+}
