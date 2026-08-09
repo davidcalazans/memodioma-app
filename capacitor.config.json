@@ -4,5 +4,10 @@
   "webDir": "www",
   "android": {
     "studioPath": "/home/david/Downloads/android-studio/bin/studio.sh"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
   }
 }
