@@ -387,20 +387,55 @@ function voltarTela() {
 // EXPORTAÇÃO E IMPORTAÇÃO
 // ==========================================
 
-function exportarDados() {
+async function exportarDados() {
   const dbData = localStorage.getItem('sqlite_memodioma_db');
-  if (!dbData) return;
-  
-  const blob = new Blob([dbData], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'memodioma_sqlite_backup.json';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  if (!dbData) {
+    alert("Nenhum dado para exportar.");
+    return;
+  }
+
+  // Verifica se está rodando no aplicativo nativo (Android/Capacitor)
+  if (window.Capacitor && window.Capacitor.isNativePlatform()) {
+    try {
+      const Filesystem = window.Capacitor.Plugins.Filesystem;
+      const Share = window.Capacitor.Plugins.Share;
+
+      // Nome do arquivo gerado
+      const fileName = `memodioma_backup_${new Date().getTime()}.json`;
+
+      // 1. Escreve o arquivo no cache do aparelho nativamente
+      const result = await Filesystem.writeFile({
+        path: fileName,
+        data: dbData,
+        directory: 'CACHE', // Salva temporariamente para poder compartilhar
+        encoding: 'utf8'
+      });
+
+      // 2. Chama a tela nativa de compartilhamento/salvar arquivo do Android
+      await Share.share({
+        title: 'Backup Memodioma',
+        text: 'Aqui está o arquivo de backup dos seus estudos.',
+        url: result.uri,
+        dialogTitle: 'Salvar backup do Memodioma'
+      });
+
+    } catch (error) {
+      console.error("Erro ao exportar no Android:", error);
+      alert("Erro ao exportar arquivo nativo.");
+    }
+  } else {
+    // Código original: Continua funcionando perfeitamente se você abrir no navegador WEB
+    const blob = new Blob([dbData], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'memodioma_sqlite_backup.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
 }
 
 function importarDados() {
