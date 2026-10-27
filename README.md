@@ -2,26 +2,39 @@
 
 ![Memodioma logo](https://raw.githubusercontent.com/davidcalazans/memodioma-app/refs/heads/main/logo.png)
 
-O Memodioma App é um aplicativo desenvolvido exclusivamente para transformar a maneira como você treina e domina novos idiomas.
-Combinando ciência cognitiva e praticidade, nossa metodologia acelera o seu aprendizado prático por meio de três pilares fundamentais: repetição espaçada (SRS), flashcards e chunks.
+The Memodioma App is an application developed exclusively to transform the way you practice and master new languages.
+By combining cognitive science and practicality, our methodology accelerates your practical learning through three fundamental pillars: spaced repetition (SRS), flashcards, and chunks.
 
-🧠Método SRS (Spaced Repetition System / Repetição Espaçada): Você não precisa revisar a mesma palavra todo santo dia até cansar. O nosso algoritmo inteligente calcula exatamente o momento em que sua mente está prestes a esquecer uma informação e a traz de volta para revisão. Isso consolida o conteúdo na sua memória de longo prazo com o menor esforço possível.
+🧠 SRS Method (Spaced Repetition System): You don't need to review the same word every single day until you get tired. Our smart algorithm calculates exactly when your mind is about to forget a piece of information and brings it back for review. This consolidates the content into your long-term memory with the least amount of effort possible.
 
-🗂️Flashcards (Cartões de Memória): Ferramenta clássica e altamente eficaz de estudo ativo. Cada cartão apresenta um desafio na frente (uma pergunta, frase ou imagem) e a resposta no verso. Ao forçar seu cérebro a buscar a resposta antes de virar o cartão, você fortalece as conexões neurais muito mais rápido do que apenas lendo um livro.
+🗂️ Flashcards: A classic and highly effective active recall tool. Each card presents a challenge on the front (a question, sentence, or image) and the answer on the back. By forcing your brain to retrieve the answer before flipping the card, you strengthen neural connections much faster than just reading a book.
 
-✍🏻Chunks (Blocos de Linguagem): Em vez de decorar regras gramaticais complexas ou palavras soltas que não fazem sentido sozinhas, você aprende através de chunks. Eles são combinações naturais de palavras frequentemente usadas por nativos (como "by the way", "como vai?" ou "take a look"). Aprender em blocos faz você falar de forma muito mais fluida, natural e sem travar para traduzir mentalmente.
+✍🏻 Chunks (Language Blocks): Instead of memorizing complex grammar rules or isolated words that make no sense on their own, you learn through chunks. They are natural combinations of words frequently used by native speakers (like "by the way", "how's it going?", or "take a look"). Learning in blocks makes you speak much more fluently, naturally, and without pausing for mental translation.
 
 ![Memodioma mock up](https://raw.githubusercontent.com/davidcalazans/memodioma-app/refs/heads/main/memodioma%20mockup.png)
 
-## Algoritmo SM-2
-O algoritmo SM-2 (SuperMemo 2), criado por Piotr Wozniak em 1987, calcula o intervalo ideal de dias entre as revisões de um flashcard com base na sua resposta de avaliação. Ele ajusta a dificuldade de cada cartão multiplicando o intervalo anterior por um "Fator de Facilidade" (Ease Factor), que aumenta ou diminui conforme o seu grau de acerto.
 
-## 🚀 Vantagens do Aplicativo:
+## SM-2 Algorithm
 
-🔒 Privacidade Total: Sem qualquer tipo de coleta de dados ou rastreamento.
+The SM-2 (SuperMemo 2) algorithm, created by Piotr Wozniak in 1987, calculates the ideal gap in days between flashcard reviews based on your self-assessment response. It adjusts the difficulty of each card by multiplying the previous interval by an "Ease Factor", which increases or decreases depending on your grade of success.
 
-🆓 Sempre Gratuito: Um projeto feito para a comunidade, sem taxas escondidas.
 
-🌐 Código Aberto: Transparência total com código disponível para auditoria e contribuição.
+## 🚀 App Advantages:
 
-🚫 Sem Propagandas: Experiência limpa, fluida e totalmente livre de anúncios.
+🔒 Total Privacy: Completely free of any data collection or tracking.
+🆓 Always Free: A project built for the community, with no hidden fees.
+🌐 Open Source: Full transparency with code available for auditing and contribution.
+🚫 Ad-Free: A clean, smooth experience completely free of advertisements.
+
+
+## 🛠️ Tech Stack
+
+This project was built using the following technologies:
+
+### Frontend
+* **HTML5:** For structured layout and semantic web elements.
+* **CSS3:** For modern responsive styling, UI components, and animations.
+* **JavaScript (ES6+):** For application logic, UI interactions, and implementing the SM-2 algorithm.
+
+### Database & Storage
+* **SQLite:** For fast, local, and secure storage of profiles, words, and flashcard history directly on the device.
