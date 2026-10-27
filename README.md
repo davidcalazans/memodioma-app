@@ -1,13 +1,4 @@
 # Memodioma app
-## 🚀 Vantagens do Aplicativo:
-
-🔒 Privacidade Total: Sem qualquer tipo de coleta de dados ou rastreamento.
-
-🆓 Sempre Gratuito: Um projeto feito para a comunidade, sem taxas escondidas.
-
-🌐 Código Aberto: Transparência total com código disponível para auditoria e contribuição.
-
-🚫 Sem Propagandas: Experiência limpa, fluida e totalmente livre de anúncios.
 
 ![Memodioma logo](https://raw.githubusercontent.com/davidcalazans/memodioma-app/refs/heads/main/logo.png)
 
@@ -24,3 +15,13 @@ Combinando ciência cognitiva e praticidade, nossa metodologia acelera o seu apr
 
 ## Algoritmo SM-2
 O algoritmo SM-2 (SuperMemo 2), criado por Piotr Wozniak em 1987, calcula o intervalo ideal de dias entre as revisões de um flashcard com base na sua resposta de avaliação. Ele ajusta a dificuldade de cada cartão multiplicando o intervalo anterior por um "Fator de Facilidade" (Ease Factor), que aumenta ou diminui conforme o seu grau de acerto.
+
+## 🚀 Vantagens do Aplicativo:
+
+🔒 Privacidade Total: Sem qualquer tipo de coleta de dados ou rastreamento.
+
+🆓 Sempre Gratuito: Um projeto feito para a comunidade, sem taxas escondidas.
+
+🌐 Código Aberto: Transparência total com código disponível para auditoria e contribuição.
+
+🚫 Sem Propagandas: Experiência limpa, fluida e totalmente livre de anúncios.
