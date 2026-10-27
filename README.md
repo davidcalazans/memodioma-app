@@ -22,8 +22,11 @@ The SM-2 (SuperMemo 2) algorithm, created by Piotr Wozniak in 1987, calculates t
 ## 🚀 App Advantages:
 
 🔒 Total Privacy: Completely free of any data collection or tracking.
+
 🆓 Always Free: A project built for the community, with no hidden fees.
+
 🌐 Open Source: Full transparency with code available for auditing and contribution.
+
 🚫 Ad-Free: A clean, smooth experience completely free of advertisements.
 
 
